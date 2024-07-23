@@ -1,0 +1,37 @@
+:root {
+  --c-bg: #fff;
+  --c-scrollbar: #eee;
+  --c-scrollbar-hover: #bbb;
+}
+
+html {
+  background-color: var(--c-bg);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+html.dark {
+  --c-bg: #212121;
+  --c-scrollbar: #333;
+  --c-scrollbar-hover: #555;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: var(--c-bg);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--c-scrollbar);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-scrollbar-hover);
+}
