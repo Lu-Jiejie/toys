@@ -11,9 +11,12 @@ html {
 }
 
 html.dark {
-  --c-bg: #212121;
+  /* --c-bg: #212121;
   --c-scrollbar: #333;
-  --c-scrollbar-hover: #555;
+  --c-scrollbar-hover: #555; */
+  --c-bg: #050505;
+  --c-scrollbar: #111;
+  --c-scrollbar-hover: #222;
 }
 
 /* 滚动条样式 */
@@ -34,4 +37,23 @@ html.dark {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--c-scrollbar-hover);
+}
+
+
+/* Vue3-typed-ts reset css */
+.typed-cursor{
+  opacity: 1;
+  animation: typedjsBlink 1.4s infinite steps(1, end) !important;
+  margin-left: -8px;
+}
+@keyframes typedjsBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
