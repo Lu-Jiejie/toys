@@ -3,6 +3,13 @@
 import type { TypedOptions } from 'vue3-typed-ts'
 import { VueTypedJs as Typer } from 'vue3-typed-ts'
 
+definePage({
+  name: 'Hello World',
+  meta: {
+    date: '2024-07-28',
+  },
+})
+
 const hellos = reactive([
   ['你好', 'Mandarin', '普通话'],
   ['嗨', 'Cantonese', '粤语'],

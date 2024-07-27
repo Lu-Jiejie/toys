@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host --port 3333 --open",
     "build": "vite build",
     "preview": "vite preview",
     "build-only": "vite build",
@@ -14,32 +14,24 @@
     "@duskmoon/vue3-typed-js": "^0.0.4",
     "@vueuse/core": "^10.11.0",
     "matter-js": "^0.20.0",
-    "typed.js": "^2.1.0",
-    "vue": "^3.4.33",
+    "vue": "^3.4.34",
     "vue-router": "^4.4.0",
-    "vue3-typed-ts": "^1.0.4"
+    "vue3-typed-ts": "^1.0.5"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.23.2",
-    "@iconify/json": "^2.2.230",
+    "@iconify/json": "^2.2.231",
     "@types/matter-js": "^0.19.7",
-    "@unocss/eslint-plugin": "^0.61.5",
-    "@unocss/reset": "^0.61.5",
-    "@vitejs/plugin-vue": "^5.0.5",
-    "eslint": "^9.7.0",
-    "less": "^4.2.0",
-    "less-loader": "^12.2.0",
+    "@unocss/eslint-plugin": "^0.61.6",
+    "@unocss/reset": "^0.61.6",
+    "@vitejs/plugin-vue": "^5.1.1",
+    "eslint": "^9.8.0",
     "typescript": "~5.5.4",
-    "unocss": "^0.61.5",
-    "unplugin-auto-import": "^0.18.1",
+    "unocss": "^0.61.6",
+    "unplugin-auto-import": "^0.18.2",
     "unplugin-vue-components": "^0.27.3",
     "unplugin-vue-router": "^0.10.1",
-    "vite": "^5.3.4",
-    "vue-tsc": "^2.0.28"
-  },
-  "pnpm": {
-    "patchedDependencies": {
-      "vue3-typed-ts@1.0.4": "patches/vue3-typed-ts@1.0.4.patch"
-    }
+    "vite": "^5.3.5",
+    "vue-tsc": "^2.0.29"
   }
 }

@@ -7,12 +7,15 @@ import {
 } from 'unocss'
 
 export default defineConfig({
-  shortcuts: {
-    'fixed-all': 'fixed top-0 left-0 right-0 bottom-0',
-    'fixed-top': 'fixed top-0 left-0 right-0',
-    'fixed-bottom': 'fixed bottom-0 left-0 right-0',
-    'centered': 'fixed top-1/2 left-1/2 translate-x--1/2 translate-y--1/2',
-  },
+  shortcuts: [
+    {
+      'fixed-all': 'fixed top-0 left-0 right-0 bottom-0',
+      'fixed-top': 'fixed top-0 left-0 right-0',
+      'fixed-bottom': 'fixed bottom-0 left-0 right-0',
+      'centered': 'fixed top-1/2 left-1/2 translate-x--1/2 translate-y--1/2',
+    },
+    [/^transition-ease-(\d+)$/, ([, d]) => `transition duration-${d} ease-in-out`],
+  ],
   presets: [
     presetIcons({
       // extraProperties: {
