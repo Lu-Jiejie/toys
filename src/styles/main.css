@@ -1,46 +1,17 @@
-:root {
-  --c-bg: #fff;
-  --c-scrollbar: #eee;
-  --c-scrollbar-hover: #bbb;
-}
-
 html {
   background-color: var(--c-bg);
   overflow-x: hidden;
-  overflow-y: scroll;
+}
+
+:root {
+  --c-bg: #fff;
 }
 
 html.dark {
-  /* --c-bg: #212121;
-  --c-scrollbar: #333;
-  --c-scrollbar-hover: #555; */
-  --c-bg: #050505;
-  --c-scrollbar: #111;
-  --c-scrollbar-hover: #222;
+  --c-bg: #000;
 }
 
-/* 滚动条样式 */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar:horizontal {
-  height: 6px;
-}
-::-webkit-scrollbar-track,
-::-webkit-scrollbar-corner {
-  background: var(--c-bg);
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: var(--c-scrollbar);
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--c-scrollbar-hover);
-}
-
-
-/* Vue3-typed-ts reset css */
+/* 001 Vue3-typed-ts reset css */
 .typed-cursor{
   opacity: 1;
   animation: typedjsBlink 1.4s infinite steps(1, end) !important;

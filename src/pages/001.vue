@@ -74,6 +74,12 @@ const preStringTyped: TypedOptions['preStringTyped'] = (index: number) => {
       </div>
     </div>
   </Paper>
+
+  <Tips>
+    <p>
+      Say hello in different languages.
+    </p>
+  </Tips>
 </template>
 
 <style scoped>

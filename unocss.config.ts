@@ -4,6 +4,7 @@ import {
   presetIcons,
   presetUno,
   presetWebFonts,
+  transformerDirectives,
 } from 'unocss'
 
 export default defineConfig({
@@ -13,8 +14,9 @@ export default defineConfig({
       'fixed-top': 'fixed top-0 left-0 right-0',
       'fixed-bottom': 'fixed bottom-0 left-0 right-0',
       'centered': 'fixed top-1/2 left-1/2 translate-x--1/2 translate-y--1/2',
+      'centerd-x': 'fixed left-1/2 translate-x--1/2',
+      'link': 'op-50 hover:op-80 transition select-none',
     },
-    [/^transition-ease-(\d+)$/, ([, d]) => `transition duration-${d} ease-in-out`],
   ],
   presets: [
     presetIcons({
@@ -35,8 +37,10 @@ export default defineConfig({
       },
     }),
   ],
-  safelist: [
-    'i-ri-sun-line',
-    'i-ri-moon-line',
+  transformers: [
+    transformerDirectives({
+      applyVariable: '--uno',
+
+    }),
   ],
 })
