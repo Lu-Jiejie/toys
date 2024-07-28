@@ -29,6 +29,7 @@ const active = ref(false)
       <div class="mt-5">
         <a
           :href="`https://github.com/Lu-Jiejie/toys/blob/main/src/pages/${route.path.slice(1)}.vue`"
+          target="_blank"
           class="link mr-3"
         >{{ route.meta.date }}
         </a>
