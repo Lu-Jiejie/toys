@@ -1,14 +1,13 @@
-html {
-  background-color: var(--c-bg);
-  overflow-x: hidden;
-}
-
-:root {
-  --c-bg: #fff;
+html,
+body,
+#app {
+  color: black;
+  background-color: white;
+  --uno: 'font-mono'
 }
 
 html.dark {
-  --c-bg: #000;
+  filter: invert(1) hue-rotate(180deg);
 }
 
 /* 001 Vue3-typed-ts reset css */

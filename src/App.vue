@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <main text="black dark:white">
+  <main>
     <RouterView />
   </main>
 </template>

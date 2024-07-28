@@ -6,23 +6,20 @@ const active = ref(false)
 <template>
   <div :class="{ active }" class="font-mono">
     <div
-      class="w-10 h-10 lh-10 text-center centerd-x bottom--0.25 select-none cursor-pointer"
-      border="~ op-20! black dark:white"
-      bg="white dark:black"
+      class="w-10 h-10 lh-10 text-center centerd-x bottom--0.25 select-none cursor-pointer bg-white"
+      border="~ black op-20"
       @click="active = true"
     >
       i
     </div>
 
     <div
-      class="modal fixed-all op-0 pointer-events-none transition duration-200"
-      bg="black dark:white"
+      class="modal fixed-all op-0 pointer-events-none transition duration-200 bg-black"
       @click="active = false"
     />
 
     <div
-      class="content centerd-x bottom-0 p-8 shadow w-125 max-w-100vw min-h-25 translate-y-110% pointer-events-none transition duration-300"
-      bg="white dark:black"
+      class="content centerd-x bottom-0 p-8 shadow bg-white w-125 max-w-100vw min-h-25 translate-y-110% pointer-events-none transition duration-300"
     >
       <slot />
 

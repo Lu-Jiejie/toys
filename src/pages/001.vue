@@ -6,7 +6,7 @@ import { VueTypedJs as Typer } from 'vue3-typed-ts'
 definePage({
   name: 'Hello World',
   meta: {
-    date: '2024-07-28',
+    date: '2024-07-27',
   },
 })
 
